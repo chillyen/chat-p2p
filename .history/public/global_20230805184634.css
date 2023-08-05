@@ -134,7 +134,7 @@ form button {
 }
 
 .circular-image {
-	width: 160px;
+	width: 16px;
 	/* 设置圆形图像的宽度 */
 	height: 160px;
 	/* 设置圆形图像的高度 */
@@ -185,7 +185,7 @@ form button {
 	/* 垂直居中 */
 	height: 300px;
 	/* 可调整容器的高度以适应页面布局 */
-	padding: 3% 0px;
+	padding: 10% 0px;
 }
 
 input {
