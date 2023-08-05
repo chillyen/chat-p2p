@@ -1,5 +1,5 @@
 <script>
-  import { user } from './user';
+  import { user } from "./user";
 
   let username;
   let password;
@@ -19,6 +19,12 @@
   }
 </script>
 
+<div class="logo_container">
+  <div class="circular-image">
+    <img src="/logo.jpg" alt="my_image" />
+  </div>
+</div>
+
 <label for="username">Username</label>
 <input name="username" bind:value={username} minlength="3" maxlength="16" />
 
@@ -26,5 +32,4 @@
 <input name="password" bind:value={password} type="password" />
 
 <button class="login" on:click={login}>Login</button>
-<button class="login"  on:click={signup}>Sign Up</button>
-  
+<button class="login" on:click={signup}>Sign Up</button>

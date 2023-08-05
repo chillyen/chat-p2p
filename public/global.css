@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -8,12 +9,13 @@ body {
 	color: #333;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Poppins", "Helvetica Neue", sans-serif;
 	overflow: hidden;
 }
 
 a {
-	color: rgb(0,100,200);
+	color: rgb(0, 100, 200);
 	text-decoration: none;
 }
 
@@ -22,14 +24,17 @@ a:hover {
 }
 
 a:visited {
-	color: rgb(0,80,160);
+	color: rgb(0, 80, 160);
 }
 
 label {
 	display: block;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
 	font-family: inherit;
 	font-size: inherit;
 	-webkit-padding: 0.4em 0;
@@ -44,22 +49,23 @@ input:disabled {
 	color: #ccc;
 }
 
-
 body {
 	background-color: #282c34;
-  }
-  
+}
+
 .app {
 	text-align: center;
 	max-width: 728px;
 	margin: 0 auto;
-  }
-  
+}
+
 header {
 	background-color: #181717;
 	height: 10vh;
 	min-height: 50px;
 	color: white;
+	border-radius: 15px;
+	border: none;
 	position: fixed;
 	width: 100%;
 	max-width: 728px;
@@ -70,36 +76,37 @@ header {
 	z-index: 99;
 	padding: 10px;
 	box-sizing: border-box;
-  }
-  
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
 	background-color: rgb(40, 37, 53);
-  }
-  
-  main {
+	border-radius: 20px;
+}
+
+main {
 	height: 80vh;
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-  }
-  
-  main::-webkit-scrollbar {
+}
+
+main::-webkit-scrollbar {
 	width: 0.25rem;
-  }
-  
-  main::-webkit-scrollbar-track {
+}
+
+main::-webkit-scrollbar-track {
 	background: #1e1e24;
-  }
-  
-  main::-webkit-scrollbar-thumb {
+}
+
+main::-webkit-scrollbar-thumb {
 	background: #6649b8;
-  }
-  
-  form {
+}
+
+form {
 	height: 8vh;
 	position: fixed;
 	bottom: 0;
@@ -108,65 +115,101 @@ header {
 	max-width: 728px;
 	display: flex;
 	font-size: 1.5rem;
-  }
-  
-  form button {
+}
+
+form button {
 	width: 20%;
 	background-color: rgb(72, 207, 79);
-  }
-  
-  
-  input {
+}
+
+.logo_container {
+	display: flex;
+	justify-content: center;
+	/* 水平居中 */
+	align-items: center;
+	/* 垂直居中 */
+	height: 150px;
+	/* 可调整容器的高度以适应页面布局 */
+}
+
+.circular-image {
+	width: 100px;
+	/* 设置圆形图像的宽度 */
+	height: 100px;
+	/* 设置圆形图像的高度 */
+	border-radius: 50%;
+	/* 将外部形状设置为圆形 */
+	overflow: hidden;
+	/* 隐藏超出圆形区域的图像部分 */
+	padding: 1px 10px;
+}
+
+.circular-image img {
+	width: 90%;
+	/* 确保图像填充整个容器 */
+	height: 90%;
+	object-fit: cover;
+	/* 调整图像大小以适应容器，并裁剪多余部分 */
+}
+
+input {
 	line-height: 1.5;
-	width: 100%;
+	transform: translate(33%, 0);
+	width: 60%;
 	font-size: 1.5rem;
 	background: rgb(58, 58, 58);
 	color: white;
 	outline: none;
+	border-radius: 10px;
 	border: none;
-	padding: 0 10px;
-	margin: 0;
-  }
-  
-  button {
-	background-color: #282c34; 
+	padding: 2px 10px;
+	margin: 50;
+}
+
+button {
+	transform: translate(50%, 0);
+	background-color: #282c34;
 	border: none;
+	border-radius: 15px;
+	width: 50%;
 	color: white;
-	padding: 15px 32px;
+	padding: 10px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	margin: 0;
-  }
+}
 
-  button:hover, button:active {
+button:hover,
+button:active {
 	filter: brightness(0.9);
-  }
-  
-  button:disabled {
+}
+
+button:disabled {
 	opacity: 0.5;
 	cursor: not-allowed;
-  }
+}
 
-  
-  
-  .login {
+.login {
 	margin: 1rem 0 0;
 	background: #1a1520;
-  }
-  
-  label {
-	  color: white;
-	  margin: 0.5rem 0;
-  }
-  ul, li {
+}
+
+label {
+	color: white;
+	margin: 0.5rem 0;
+	font-size: larger;
+}
+
+ul,
+li {
 	text-align: left;
 	list-style: none;
-  }
-  
-  p {
+}
+
+p {
 	max-width: 500px;
 	margin-bottom: 0;
 	line-height: 24px;
@@ -175,77 +218,77 @@ header {
 	position: relative;
 	color: white;
 	text-align: center;
-  }
-  
-  .message {
+}
+
+.message {
 	display: flex;
 	align-items: center;
 	margin: 0;
-	word-wrap:break-word;
-  }
-  
-  
-  .sent {
+	word-wrap: break-word;
+}
+
+.sent {
 	flex-direction: row-reverse;
-  }
-  
-  .sent p {
+}
+
+.sent p {
 	color: white;
 	background: #0b93f6;
 	align-self: flex-end;
 	text-align: right;
-  }
-  .received p {
+}
+
+.received p {
 	background: #e5e5ea;
 	color: black;
 	text-align: left;
-  }
+}
 
-  .message-text {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: flex-end;
-  }
+.message-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
 
-  .received .message-text {
+.received .message-text {
 	align-items: flex-start;
 }
 
-  time {
-	  color: white;
-	  font-size: 0.7rem;
-	  color: #9a9a9a;
-	  margin: 0 1rem;
-  }
-  
-  img {
+time {
+	color: white;
+	font-size: 0.7rem;
+	color: #9a9a9a;
+	margin: 0 1rem;
+}
+
+img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	margin: 2px 5px;
-  }
+}
 
-  .message:last-child {
-	  margin-bottom: 20px;
-  }
+.message:last-child {
+	margin-bottom: 20px;
+}
 
-  .user-bio {
-	  display: flex;
-	  align-items: center;
-  }
+.user-bio {
+	display: flex;
+	align-items: center;
+}
 
-  .scroll-button {
-	  position: fixed;
-	  bottom: 70px;
-	  right: 20px;
-	  color: white;
-  }
+.scroll-button {
+	position: fixed;
+	bottom: 70px;
+	right: 20px;
+	color: white;
+}
 
-  .red {
+.red {
 	background: rgb(204, 53, 37);
-  }
+}
 
-  .signout-button {
-	  font-size: 0.8rem;
-	  padding: 0.5rem 1rem;
-  }
+.signout-button {
+	font-size: 0.8rem;
+	padding: 0.5rem 1rem;
+}
