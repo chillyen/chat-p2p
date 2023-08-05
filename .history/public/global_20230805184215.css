@@ -177,17 +177,6 @@ form button {
 	object-fit: cover;
 }
 
-.login_container {
-	position: relative;
-	justify-content: center;
-	/* 水平居中 */
-	align-items: center;
-	/* 垂直居中 */
-	height: 300px;
-	/* 可调整容器的高度以适应页面布局 */
-	padding: 10% 0px;
-}
-
 input {
 	line-height: 1.5;
 	width: 60%;
@@ -233,7 +222,7 @@ button:disabled {
 
 label {
 	color: white;
-	margin: 0.8rem 0;
+	margin: 0.5rem 0;
 	font-size: larger;
 }
 

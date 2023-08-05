@@ -24,7 +24,7 @@
     <img src="/nyan-cat-60fps.gif" alt="my_image" />
   </div>
 </div>
-<div class="login_container">
+<div class=>
   <label for="username">Username</label>
   <input name="username" bind:value={username} minlength="3" maxlength="16" />
 

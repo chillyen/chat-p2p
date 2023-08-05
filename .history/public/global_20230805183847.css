@@ -134,9 +134,9 @@ form button {
 }
 
 .circular-image {
-	width: 180px;
+	width: 120px;
 	/* 设置圆形图像的宽度 */
-	height: 180px;
+	height: 120px;
 	/* 设置圆形图像的高度 */
 	border-radius: 50%;
 	/* 将外部形状设置为圆形 */
@@ -146,10 +146,10 @@ form button {
 }
 
 .circular-image img {
-	width: 100%;
+	width: 120%;
 	/* 确保图像填充整个容器 */
-	height: 100%;
-	object-fit: cover;
+	height: 120%;
+	/* object-fit: cover; */
 	/* 调整图像大小以适应容器，并裁剪多余部分 */
 }
 
@@ -177,19 +177,9 @@ form button {
 	object-fit: cover;
 }
 
-.login_container {
-	position: relative;
-	justify-content: center;
-	/* 水平居中 */
-	align-items: center;
-	/* 垂直居中 */
-	height: 300px;
-	/* 可调整容器的高度以适应页面布局 */
-	padding: 10% 0px;
-}
-
 input {
 	line-height: 1.5;
+	transform: translate(33%, 0);
 	width: 60%;
 	font-size: 1.5rem;
 	background: rgb(58, 58, 58);
@@ -202,6 +192,7 @@ input {
 }
 
 button {
+	transform: translate(50%, 0);
 	background-color: #282c34;
 	border: none;
 	border-radius: 15px;
@@ -233,7 +224,7 @@ button:disabled {
 
 label {
 	color: white;
-	margin: 0.8rem 0;
+	margin: 0.5rem 0;
 	font-size: larger;
 }
 

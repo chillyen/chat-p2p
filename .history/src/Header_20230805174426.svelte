@@ -8,7 +8,7 @@
 </script>
 
 <header>
-<h1>😺💬</h1>
+<h1>CHILL💬</h1>
   {#if $username}
     <div class="user-bio">
       
